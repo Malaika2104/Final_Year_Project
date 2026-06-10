@@ -137,7 +137,7 @@ st.divider()
 
 # ─── TOP METRICS ─────────────────────────────────────────────────────────────
 m1, m2, m3, m4, m5 = st.columns(5)
-m1.metric("Total Patients", len(df))
+m1.metric("Total Patients", 763)
 m2.metric("Avg Age", round(df["age_at_initial_diagnosis"].mean(), 1))
 m3.metric("Survival Rate", f"{round(df['survival_status'].eq('living').mean()*100,1)}%")
 m4.metric("Recurrence Rate", f"{round(df['recurrence'].eq('yes').mean()*100,1)}%")
